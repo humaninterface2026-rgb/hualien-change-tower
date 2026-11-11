@@ -26621,7 +26621,7 @@ void main() {
  *   overview  — the seven-floor tower + a row of seven category plaque-cards (animals only as small accents)
  *   category  — right panel (phone: bottom sheet): 大標, this floor's 細項 names, 細項 (expandable, listing each 建設), 開始導覽
  *   tour      — one station per 建設 in HL.data.tourOrder[cat]: stop letter / progress, 展覽標題, name, keyword chips,
- *               description (red-text runs emphasised), swipeable photos + lightbox (photo credit: HL.brand.product.photoCredit), 確認局處 only,
+ *               description (red-text runs emphasised), swipeable photos + lightbox (photo credit: HL.brand.product.photoCredit), 業管局處 only,
  *               prev / next / autoplay / exit, ← → Esc Space.
  * The 3D world is driven through the CONTRACT_JH §4 tour API (startTour / tourGo / tourNext / tourPrev / endTour /
  * setAutoplay, events 'station' and 'tourEnd'). Every method is feature-detected: without it the UI runs the tour
@@ -27201,7 +27201,7 @@ void main() {
             ${kw ? `<ul class="jh-kw" aria-label="重要關鍵字">${kw}</ul>` : ''}
             ${photosHTML}
             <div class="jh-desc">${richHTML(p)}</div>
-            ${p.deptLabel ? `<p class="jh-dept"><small>確認局處</small><span>${esc(p.deptLabel)}</span></p>` : ''}
+            ${p.deptLabel ? `<p class="jh-dept"><small>業管局處</small><span>${esc(p.deptLabel)}</span></p>` : ''}
           </div>
         </div>
         <footer class="jh-pf jh-pf-st">
